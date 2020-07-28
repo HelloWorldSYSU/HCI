@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="和小爱对话"
+        android:gravity="center"
+        android:textColor="#E2A60B"
+        android:textSize="30sp"
+        android:layout_gravity="center"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#d7d7d7"/>
+
+    <ListView
+        android:layout_weight="10"
+        android:layout_width="match_parent"
+        android:divider="#000000"
+        android:layout_height="0dp"
+        android:id="@+id/chat"/>
+
+    <top.androidman.SuperButton
+        android:id="@+id/speechBut"
+        android:layout_width="200dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:text="开始说话"
+        app:color_normal="#237643"
+        app:corner="10dp"
+        app:text="开始说话"
+        app:textColor="#123344"
+        app:textSize="22sp"/>
+</LinearLayout>
